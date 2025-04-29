@@ -20,8 +20,7 @@ on:
           - buat
       build-name:
         description: Build Name
-        required: true
-	
+        required: true	
 permissions:
   contents: read
   security-events: write
