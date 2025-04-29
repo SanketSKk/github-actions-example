@@ -14,6 +14,12 @@ on:
   pull_request:
     branches: [ "main" ]
 
+    # ✅ Add this block to grant permissions to the GitHub token
+permissions:
+  contents: read
+  security-events: write  # Required for dependency submission
+
+
 jobs:
   build:
 
