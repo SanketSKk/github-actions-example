@@ -6,9 +6,21 @@
 # separate terms of service, privacy policy, and support
 # documentation.
 
-name: Publish to Non Prod
+name: Publish to ECR-NON-PROD
 
 on:
+  workflow_dispatch:
+    inputs:
+      choice:
+      	type: choice
+	description: Select the environment
+	options:
+ 	  - sit
+    	  - qa
+       	  - buat
+      build-name:
+ 	  description: Build Name
+    	  required: true
   push:
     branches: [ "main" ]
   pull_request:
