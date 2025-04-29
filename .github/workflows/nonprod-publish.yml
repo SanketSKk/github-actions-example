@@ -21,6 +21,10 @@ on:
       build-name:
         description: Build Name
         required: true
+
+permissions:
+  contents: read
+  security-events: write
   
     # ✅ Add this block to grant permissions to the GitHub token
 # permissions:
