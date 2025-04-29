@@ -12,15 +12,15 @@ on:
   workflow_dispatch:
     inputs:
       choice:
-      	type: choice
-	description: Select the environment
-	options:
- 	  - sit
-    	  - qa
-       	  - buat
+        type: choice
+        description: Select the environment
+        options:
+          - sit
+          - qa
+          - buat
       build-name:
- 	  description: Build Name
-    	  required: true
+        description: Build Name
+        required: true
   push:
     branches: [ "main" ]
   pull_request:
