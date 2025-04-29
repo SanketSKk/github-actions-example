@@ -21,11 +21,7 @@ on:
       build-name:
         description: Build Name
         required: true
-  push:
-    branches: [ "main" ]
-  pull_request:
-    branches: [ "main" ]
-
+  
     # ✅ Add this block to grant permissions to the GitHub token
 # permissions:
 #   contents: read
